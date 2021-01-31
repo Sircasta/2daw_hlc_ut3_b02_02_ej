@@ -27,5 +27,8 @@ services:
         resource: '../src/Controller/'
         tags: ['controller.service_arguments']
 
+    Fidry\AliceDataFixtures\Loader\PurgerLoader:
+        alias: fidry_alice_data_fixtures.doctrine.purger_loader
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
